@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fffaf5">
+  <meta name="description" content="A sweet, illustrated birthday surprise made with love.">
+  <title>Happy Birthday, Aiya!</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="paper-texture" aria-hidden="true"></div>
+  <div class="sparkle-field" id="sparkleField" aria-hidden="true"></div>
+
+  <main class="page-shell">
+    <header class="page-heading">
+      <p class="eyebrow"><span aria-hidden="true">✿</span> A little day made extra sweet <span aria-hidden="true">✿</span></p>
+      <h1>Happy Birthday,<br><span>Aiya!</span></h1>
+      <p class="welcome-copy">A tiny celebration, just for you.</p>
+    </header>
+
+    <section class="birthday-scene" id="birthdayScene" aria-label="A tall birthday cake and a little party guest">
+      <div class="floating-heart heart-one" aria-hidden="true">♥</div>
+      <div class="floating-heart heart-two" aria-hidden="true">♡</div>
+      <div class="floating-heart heart-three" aria-hidden="true">♥</div>
+      <span class="scene-sparkle sparkle-one" aria-hidden="true">✦</span>
+      <span class="scene-sparkle sparkle-two" aria-hidden="true">✧</span>
+      <span class="scene-sparkle sparkle-three" aria-hidden="true">✦</span>
+
+      <div class="little-guest" aria-hidden="true">
+        <div class="party-hat"><span></span></div>
+        <div class="guest-hair"></div>
+        <div class="guest-face"><i class="eye eye-left"></i><i class="eye eye-right"></i><i class="smile"></i><i class="blush blush-left"></i><i class="blush blush-right"></i></div>
+        <div class="guest-body"></div>
+        <div class="guest-arm">
+          <span class="arm-sleeve"></span>
+          <span class="arm-forearm"></span>
+          <span class="arm-hand">
+            <i class="hand-finger"></i><i class="hand-finger"></i><i class="hand-finger"></i><i class="hand-finger"></i>
+            <i class="hand-thumb"></i>
+          </span>
+        </div>
+        <div class="guest-legs"><i></i><i></i></div>
+        <div class="guest-shoes"><i></i><i></i></div>
+      </div>
+
+      <div class="cake-tower" aria-label="A colorful layered birthday cake with seven candles">
+        <div class="candles" aria-hidden="true">
+          <span><i></i></span><span><i></i></span><span><i></i></span><span><i></i></span>
+          <span><i></i></span><span><i></i></span><span><i></i></span>
+        </div>
+        <div class="cake-tier tier-pink"><span class="berry berry-a"></span><span class="berry berry-b"></span><span class="berry berry-c"></span><span class="berry berry-d"></span></div>
+        <div class="cake-tier tier-cream"><span class="heart-mark">♥</span><span class="heart-mark">♡</span><span class="heart-mark">♥</span></div>
+        <div class="cake-tier tier-rose"><span class="berry berry-a"></span><span class="berry berry-b"></span><span class="berry berry-c"></span><span class="berry berry-d"></span><span class="berry berry-e"></span></div>
+        <div class="cake-tier tier-apricot"><span class="heart-mark">♡</span><span class="heart-mark">♥</span><span class="heart-mark">♡</span></div>
+        <div class="cake-tier tier-mint"><span class="heart-mark">♥</span><span class="heart-mark">♡</span><span class="heart-mark">♥</span><span class="heart-mark">♡</span></div>
+        <div class="cake-tier tier-berry"><span class="icing-ribbon"></span><span class="bow"><i></i><i></i><b></b></span></div>
+        <div class="cake-plate"></div>
+      </div>
+
+      <div class="mini-cupcake" aria-hidden="true">
+        <span class="cupcake-cherry"></span><span class="cupcake-icing"></span><span class="cupcake-wrapper"></span>
+      </div>
+      <div class="ground-line" aria-hidden="true"></div>
+      <p class="cake-caption">Baked with lots of love <span aria-hidden="true">♡</span></p>
+    </section>
+
+    <section class="surprise-controls" aria-label="Birthday surprise controls">
+      <button class="button button-primary" id="openButton" type="button">
+        <span class="button-gift" aria-hidden="true">🎁</span> Open your little surprise
+      </button>
+      <button class="button button-music" id="musicButton" type="button" aria-pressed="false">
+        <span aria-hidden="true">♫</span> <span id="musicLabel">Play birthday song</span>
+      </button>
+      <p class="music-status" id="musicStatus" role="status" hidden></p>
+      <audio id="birthdaySong" preload="auto" src="leberch-happy-birthday-581704.mp3"></audio>
+    </section>
+
+    <section class="surprise-note" id="surpriseNote" aria-live="polite" hidden>
+      <span class="note-flower" aria-hidden="true">✿</span>
+      <h2>Make a wish!</h2>
+      <p>May your day be full of cake, giggles, and lovely little surprises.</p>
+      <button class="button button-replay" id="replayButton" type="button">Celebrate again <span aria-hidden="true">↻</span></button>
+    </section>
+  </main>
+
+  <footer class="page-footer">Made with love, just for you <span aria-hidden="true">♡</span></footer>
+</body>
+</html>
